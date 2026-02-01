@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>HBD Stephen Sayang</title>
+    <style>
+        /* Gaya sederhana agar tampilannya cantik */
+        body { font-family: 'Arial', sans-serif; background: #fce4ec; text-align: center; color: #333; padding: 20px; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        img { width: 100%; border-radius: 15px; margin-bottom: 15px; }
+        .ucapan { text-align: justify; line-height: 1.6; font-size: 14px; white-space: pre-wrap; }
+        input { padding: 10px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 10px; }
+        button { padding: 10px 20px; background: #ff4081; color: white; border: none; border-radius: 10px; cursor: pointer; }
+        #konten-utama { display: none; }
+    </style>
+</head>
+<body>
+
+    <div id="login-section" class="container">
+        <h2>Masukkan Password:</h2>
+        <input type="password" id="passInput" placeholder="Tanggal spesial...">
+        <br>
+        <button onclick="checkPass()">Buka Kejutan</button>
+    </div>
+
+    <div id="konten-utama" class="container">
+        <h1>Happy Birthday Stephen! ❤️</h1>
+        
+        <img src="foto1.jpg" alt="Momen Kita">
+        <img src="foto2.jpg" alt="Momen Kita">
+        <img src="foto3.jpg" alt="Momen Kita">
+
+        <div class="ucapan">
+Selamatt ulang taahun sayangkuu stephenn.. aku cuma berharap di ulang tahun kali inii, kamu bisa merasakan hangat, bahagia, dann lebih peduli sama dirimu sendirii. Semoga juga di tahun inii, kamu bisa dapet semua yang kamu mauu dalam hidupmuu, jadi maba itb, sayang sama akuu (lagi) hehe, dan semoga semua harapanmuu terwujud yaa. maaf kali inii aku cuma bisa kasi kataa” dan ucapan untuk kamuu, tapi aku yakin dan percaya suatu saat nantii kamu akan bisa tau semua yang sebenar”nyaa telat kupersiapkann. i wishing you alll the bestt, dan aku yakin kamu bisaa melewati semua badai yang akan datangg di hidupmu karna aku tau kamu kuatt dan pasti kamu sanggupp. aku minta maaff yaa kalau sampai sekarang aku masih ada di hidupmu dengan label pacarr, aku juga minta maaf sudahh meninggalkan luka yang dalam di hatimuu, aku yakin aku bisa fix semua inii, jadi bersabar sedikitt lagi yaa pennn. aku sayangggg sekali sama kamuu, dari awal sampai hari inii sayangku tidak pernah memudar sedikitpunn. aku berharap semogaa kamu juga benar” mencobaa dan selalu mengandalkan Tuhan di setiap langkah hidup muu. aku disini cuma bisaa mendukung semua keputusanmu dan berdoa supaya kamu mengambil keputusan yang benarr. semoga jugaa hal” baikk akan datang ke hidupmuu dan semuanya berjalan dengan lancarr. aku juga berdoa supaya kamu bisa menata kembali hati dan dirimuu yang sudah lama hilangg, kamu hanya lagi kelelahan secara mental dan emosionall, jadii belum bisa berfikir secara jernihh. karna tekanan yang ada jugaa makanya sekarang kamu berubahh, tapi tenang saja sayangg aku yakin nantii kamu akan kembali seperti semulaa. trimakasii yaa penn sudah bertahan sejauh inii, terimakasihh juga sudah berjuangg sekeras itu untuk akuu, aku merasa berharga dan dihargai oleh kamuu yang bahkan memberi aku compliments ke hal” kecilll sekecil apapun yang aku lakukann. i love youu fuulll, terimakasih sudahh megisi hari” ku dengan warnaa baru di setiap harinyaa. aku ada disinii yaa kapanpun kamu butuh akuu, aku akan selalu adaa, always be happy yaa sayangkuuu, i love youu so muchh from my deepest heart💖❤️
+        </div>
+    </div>
+
+    <script>
+        function checkPass() {
+            var pass = document.getElementById("passInput").value;
+            // Password diubah jadi 010725
+            if (pass === "010725") {
+                document.getElementById("login-section").style.display = "none";
+                document.getElementById("konten-utama").style.display = "block";
+            } else {
+                alert("Password salah, ayo ingat lagi!");
+            }
+        }
+    </script>
+</body>
+</html>
