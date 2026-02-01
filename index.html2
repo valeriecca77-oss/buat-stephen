@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday 💗</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:Arial;
+  background:#ffe6f0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+.card{
+  background:white;
+  max-width:420px;
+  width:100%;
+  border-radius:20px;
+  padding:24px;
+  text-align:center;
+}
+.hidden{display:none}
+button{
+  background:#ff4d8d;
+  border:none;
+  color:white;
+  padding:12px 22px;
+  border-radius:25px;
+  font-size:16px;
+  margin-top:14px;
+  cursor:pointer;
+}
+img{max-width:100%;border-radius:16px}
+p{font-size:14px;line-height:1.6;margin-top:12px;white-space:pre-line}
+</style>
+</head>
+
+<body>
+<div class="card">
+
+<div id="p1">
+<img src="images/foto1.jpg">
+<h2>Happy Birthday Stephenn 💗</h2>
+<button onclick="go(2)">tap 💌</button>
+</div>
+
+<div id="p2" class="hidden">
+<img src="images/foto2.jpg">
+<button onclick="go(3)">next ➜</button>
+</div>
+
+<div id="p3" class="hidden">
+<img src="images/foto3.jpg">
+<button onclick="go(4)">open message 💗</button>
+</div>
+
+<div id="p4" class="hidden">
+<p>
+Selamat ulang tahun sayangku Stephenn 🤍
+
+Aku cuma berharap di ulang tahun kali ini, kamu bisa merasakan hangat, bahagia, dan lebih peduli sama dirimu sendiri.
+Semoga di tahun ini kamu bisa dapet semua yang kamu mau dalam hidupmu: jadi maba ITB, sayang sama aku (lagi) hehe,
+dan semoga semua harapanmu terwujud ya.
+
+Maaf kali ini aku cuma bisa kasih kata-kata dan ucapan untuk kamu,
+tapi aku yakin suatu saat nanti kamu akan tau semua yang sebenarnya telah kupersiapkan.
+
+I wishing you all the best.
+Aku yakin kamu bisa melewati semua badai yang akan datang di hidupmu karena aku tau kamu kuat dan pasti sanggup.
+
+Aku sayang kamu selalu.
+</p>
+</div>
+
+</div>
+
+<audio autoplay loop>
+<source src="my-everything.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function go(n){
+  ['p1','p2','p3','p4'].forEach(p=>document.getElementById(p).classList.add('hidden'));
+  document.getElementById('p'+n).classList.remove('hidden');
+}
+</script>
+</body>
+</html>
